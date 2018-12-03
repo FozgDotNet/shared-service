@@ -1,0 +1,24 @@
+{
+  "name": "fozg.net-shared-service",
+  "version": "0.0.1",
+  "description": "fozg.net shared service",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "mocha 'src/packages/**/*.test.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FozgDotNet/shared-service.git"
+  },
+  "author": "fozg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FozgDotNet/shared-service/issues"
+  },
+  "homepage": "https://github.com/FozgDotNet/shared-service#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.14"
+  }
+}
