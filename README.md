@@ -11,3 +11,12 @@ git clone https://github.com/FozgDotNet/shared-service.git
 # install dependencies
 cd shared-service && yarn
 ```
+
+
+## Test
+```bash
+# install mocha
+npm install -g mocha
+# run test
+yarn test
+```
