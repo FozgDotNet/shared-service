@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const UserProfile = mongoose.model('UserProfile', {
   userId: mongoose.Schema.Types.ObjectId,
-  emai: String,
+  email: String,
   name: String,
   bio: String,
   url: String, 
