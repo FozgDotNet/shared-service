@@ -2,9 +2,10 @@
   "name": "fozg.net-shared-service",
   "version": "0.0.1",
   "description": "fozg.net shared service",
-  "main": "src/app.js",
+  "main": "src/server.js",
   "scripts": {
-    "test": "mocha 'src/packages/**/*.test.js'"
+    "test": "clear && mocha 'src/tests/**/*.test.js'",
+    "start": "export RUNNING=development && node src/server"
   },
   "repository": {
     "type": "git",
@@ -17,8 +18,12 @@
   },
   "homepage": "https://github.com/FozgDotNet/shared-service#readme",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "chai": "^4.2.0",
+    "chai-http": "^4.2.0",
     "express": "^4.16.4",
-    "mongoose": "^5.3.14"
+    "http": "^0.0.0",
+    "mongoose": "^5.3.14",
+    "morgan": "^1.9.1"
   }
 }
