@@ -1,6 +1,6 @@
 ## SharedService on fozg.net
 This project use for which data that use on every apps on fozg.net.
-Such as `User Profile` information, `Notification`..
+Such as `User Profile` information, `Notification`, `conversation`..
 Also provider some API to that help `core-component` that works.
 
 ## Install
