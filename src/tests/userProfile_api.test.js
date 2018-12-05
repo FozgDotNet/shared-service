@@ -27,6 +27,4 @@ it('should list SIGNLE userProfiles on /api/userProfile/<id> GET', function(done
         done();
       });
   });
-
- 
 });
