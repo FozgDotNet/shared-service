@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const UserProfile = mongoose.model('UserProfile', {
   userId: mongoose.Schema.Types.ObjectId,
   email: String,
+  publicEmail: String,
   name: String,
   bio: String,
   url: String, 
@@ -17,7 +18,6 @@ const UserProfile = mongoose.model('UserProfile', {
   mediumUrl: String,
   instagramUrl: String,
   twitterUrl: String,
-  publicEmail: String,
 });
 
 module.exports = UserProfile;
