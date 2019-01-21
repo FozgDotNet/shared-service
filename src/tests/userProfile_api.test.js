@@ -28,3 +28,18 @@ it('should list SIGNLE userProfiles on /api/userProfile/<id> GET', function(done
       });
   });
 });
+
+it('should add SINGLE userProfile via /api/userProfile POST', function(done) {
+  let uId = Date.now();
+  chai.request(server).post('/api/userProfile/').send({
+    email: `${uId}@gmail.com`, // unique
+    name: `name of ${uId}`,
+    bio: `bio of `+ uId,
+  }).end(function(err, res, body) {
+    res.should.have.status(200);
+    res.should.be.json;
+    res.body.name.should.equal(`name of ${uId}`);
+    res.body.should.be.a('object');
+    done();
+  })
+})

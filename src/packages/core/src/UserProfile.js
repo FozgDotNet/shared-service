@@ -34,7 +34,7 @@ class UserProfile {
       instagramUrl: this.instagramUrl,
       twitterUrl: this.twitterUrl,
     });
-    return _userProfile.save()
+    return await _userProfile.save();
   }
 
   /**
